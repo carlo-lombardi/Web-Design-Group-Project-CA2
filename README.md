@@ -39,7 +39,7 @@ The site structure is inspired by [Holland & Barrett Ireland](https://www.hollan
 
 ## Design
 
-- **UI reference:** [Figma file](https://www.figma.com/design/BzXVRsw5fDnKscjK0euofW/Web-Design-Group-Project-CA2?node-id=0-1), with a desktop and a mobile frame for each page. The first version of the screens was generated with Google Stitch and then edited by hand.
+- **UI reference:** [Figma file](https://www.figma.com/design/BzXVRsw5fDnKscjK0euofW/Web-Design-Group-Project-CA2?node-id=0-1&t=H2Nafcu36RMo3gta-1), with a desktop and a mobile frame for each page. The first version of the screens was generated with Google Stitch and then edited by hand.
 - **Colours:**
 
   | Name | Hex | Used for |
