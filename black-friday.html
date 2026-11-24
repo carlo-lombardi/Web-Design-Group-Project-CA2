@@ -53,8 +53,252 @@
   </header>
 
   <main>
-    <!-- #8 Black Friday page: banner, filter bar, grid of 12 products, trust strip -->
-    <!-- #9 The filter and sort controls are filled in by js/offers.js -->
+    <!-- #8 Black Friday page -->
+
+    <!-- Banner -->
+    <section class="container mt-4">
+      <div class="bf-banner p-4 p-lg-5">
+        <span class="badge bg-light text-dark">Black Friday sale</span>
+        <h1 class="display-6 fw-bold text-white mt-3">Black Friday: up to 40% off vitamins</h1>
+        <p class="lead mb-0">Limited-time deals on our best sellers. Free delivery on orders over €40.</p>
+      </div>
+    </section>
+
+    <!-- Filter bar (the buttons and the select work with js/offers.js, #9) -->
+    <section class="container mt-4">
+      <div class="card filter-bar p-3">
+        <div class="d-flex flex-wrap justify-content-between align-items-center gap-3">
+          <div class="d-flex flex-wrap gap-2" id="category-filters">
+            <button class="btn btn-sm btn-primary filter-btn" data-filter="all">All</button>
+            <button class="btn btn-sm btn-outline-primary filter-btn" data-filter="immunity">Immunity</button>
+            <button class="btn btn-sm btn-outline-primary filter-btn" data-filter="energy">Energy</button>
+            <button class="btn btn-sm btn-outline-primary filter-btn" data-filter="bones">Bones &amp; Muscles</button>
+            <button class="btn btn-sm btn-outline-primary filter-btn" data-filter="multivitamins">Multivitamins</button>
+          </div>
+          <div class="d-flex align-items-center gap-3">
+            <label for="sort-select" class="small fw-semibold">Sort by</label>
+            <select id="sort-select" class="form-select form-select-sm">
+              <option value="default">Featured</option>
+              <option value="price-low">Price: low to high</option>
+              <option value="price-high">Price: high to low</option>
+              <option value="discount">Biggest discount</option>
+            </select>
+          </div>
+        </div>
+        <p class="small text-muted-vw mt-2 mb-0" id="deal-count">Showing 12 deals</p>
+      </div>
+    </section>
+
+    <!-- Product grid -->
+    <section class="container my-4">
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-3" id="product-grid">
+
+        <div class="col product-col" data-category="immunity" data-price="16.20" data-discount="40">
+          <div class="card product-card h-100 p-3">
+            <span class="badge badge-discount product-badge">-40%</span>
+            <!-- #17 Replace with a real product image -->
+            <div class="product-img"><i class="bi bi-capsule"></i></div>
+            <span class="tag-category mt-3 align-self-start">Immunity</span>
+            <h2 class="h6 mt-2">Vitamin C 1000mg</h2>
+            <p class="small text-muted-vw">Daily support for your immune system.</p>
+            <p class="mt-auto mb-0"><span class="price">€16.20</span> <del class="text-muted-vw small">€27.00</del></p>
+            <p class="small save-text mb-2">Save €10.80</p>
+            <button class="btn btn-primary w-100 add-to-basket" data-id="vitamin-c" data-name="Vitamin C 1000mg" data-price="16.20"><i class="bi bi-basket2"></i> Add to basket</button>
+          </div>
+        </div>
+
+        <div class="col product-col" data-category="immunity" data-price="12.95" data-discount="30">
+          <div class="card product-card h-100 p-3">
+            <span class="badge badge-discount product-badge">-30%</span>
+            <!-- #17 Replace with a real product image -->
+            <div class="product-img"><i class="bi bi-capsule"></i></div>
+            <span class="tag-category mt-3 align-self-start">Immunity</span>
+            <h2 class="h6 mt-2">Zinc + C</h2>
+            <p class="small text-muted-vw">Zinc and vitamin C in one tablet.</p>
+            <p class="mt-auto mb-0"><span class="price">€12.95</span> <del class="text-muted-vw small">€18.50</del></p>
+            <p class="small save-text mb-2">Save €5.55</p>
+            <button class="btn btn-primary w-100 add-to-basket" data-id="zinc-c" data-name="Zinc + C" data-price="12.95"><i class="bi bi-basket2"></i> Add to basket</button>
+          </div>
+        </div>
+
+        <div class="col product-col" data-category="immunity" data-price="14.99" data-discount="25">
+          <div class="card product-card h-100 p-3">
+            <span class="badge badge-discount product-badge">-25%</span>
+            <!-- #17 Replace with a real product image -->
+            <div class="product-img"><i class="bi bi-capsule"></i></div>
+            <span class="tag-category mt-3 align-self-start">Immunity</span>
+            <h2 class="h6 mt-2">Elderberry Gummies</h2>
+            <p class="small text-muted-vw">Tasty gummies for the winter months.</p>
+            <p class="mt-auto mb-0"><span class="price">€14.99</span> <del class="text-muted-vw small">€19.99</del></p>
+            <p class="small save-text mb-2">Save €5.00</p>
+            <button class="btn btn-primary w-100 add-to-basket" data-id="elderberry" data-name="Elderberry Gummies" data-price="14.99"><i class="bi bi-basket2"></i> Add to basket</button>
+          </div>
+        </div>
+
+        <div class="col product-col" data-category="energy" data-price="13.50" data-discount="32">
+          <div class="card product-card h-100 p-3">
+            <span class="badge badge-discount product-badge">-32%</span>
+            <!-- #17 Replace with a real product image -->
+            <div class="product-img"><i class="bi bi-capsule"></i></div>
+            <span class="tag-category mt-3 align-self-start">Energy</span>
+            <h2 class="h6 mt-2">Vitamin B12</h2>
+            <p class="small text-muted-vw">Helps reduce tiredness and fatigue.</p>
+            <p class="mt-auto mb-0"><span class="price">€13.50</span> <del class="text-muted-vw small">€20.00</del></p>
+            <p class="small save-text mb-2">Save €6.50</p>
+            <button class="btn btn-primary w-100 add-to-basket" data-id="vitamin-b12" data-name="Vitamin B12" data-price="13.50"><i class="bi bi-basket2"></i> Add to basket</button>
+          </div>
+        </div>
+
+        <div class="col product-col" data-category="energy" data-price="17.50" data-discount="30">
+          <div class="card product-card h-100 p-3">
+            <span class="badge badge-discount product-badge">-30%</span>
+            <!-- #17 Replace with a real product image -->
+            <div class="product-img"><i class="bi bi-capsule"></i></div>
+            <span class="tag-category mt-3 align-self-start">Energy</span>
+            <h2 class="h6 mt-2">B-Complex</h2>
+            <p class="small text-muted-vw">All eight B vitamins in one capsule.</p>
+            <p class="mt-auto mb-0"><span class="price">€17.50</span> <del class="text-muted-vw small">€25.00</del></p>
+            <p class="small save-text mb-2">Save €7.50</p>
+            <button class="btn btn-primary w-100 add-to-basket" data-id="b-complex" data-name="B-Complex" data-price="17.50"><i class="bi bi-basket2"></i> Add to basket</button>
+          </div>
+        </div>
+
+        <div class="col product-col" data-category="energy" data-price="14.00" data-discount="30">
+          <div class="card product-card h-100 p-3">
+            <span class="badge badge-discount product-badge">-30%</span>
+            <!-- #17 Replace with a real product image -->
+            <div class="product-img"><i class="bi bi-capsule"></i></div>
+            <span class="tag-category mt-3 align-self-start">Energy</span>
+            <h2 class="h6 mt-2">Iron + C</h2>
+            <p class="small text-muted-vw">Gentle iron with vitamin C for better absorption.</p>
+            <p class="mt-auto mb-0"><span class="price">€14.00</span> <del class="text-muted-vw small">€20.00</del></p>
+            <p class="small save-text mb-2">Save €6.00</p>
+            <button class="btn btn-primary w-100 add-to-basket" data-id="iron-c" data-name="Iron + C" data-price="14.00"><i class="bi bi-basket2"></i> Add to basket</button>
+          </div>
+        </div>
+
+        <div class="col product-col" data-category="bones" data-price="15.00" data-discount="40">
+          <div class="card product-card h-100 p-3">
+            <span class="badge badge-discount product-badge">-40%</span>
+            <!-- #17 Replace with a real product image -->
+            <div class="product-img"><i class="bi bi-capsule"></i></div>
+            <span class="tag-category mt-3 align-self-start">Bones &amp; Muscles</span>
+            <h2 class="h6 mt-2">Vitamin D3 2000IU</h2>
+            <p class="small text-muted-vw">Ideal for the dark Irish winters.</p>
+            <p class="mt-auto mb-0"><span class="price">€15.00</span> <del class="text-muted-vw small">€25.00</del></p>
+            <p class="small save-text mb-2">Save €10.00</p>
+            <button class="btn btn-primary w-100 add-to-basket" data-id="vitamin-d3" data-name="Vitamin D3 2000IU" data-price="15.00"><i class="bi bi-basket2"></i> Add to basket</button>
+          </div>
+        </div>
+
+        <div class="col product-col" data-category="bones" data-price="16.50" data-discount="25">
+          <div class="card product-card h-100 p-3">
+            <span class="badge badge-discount product-badge">-25%</span>
+            <!-- #17 Replace with a real product image -->
+            <div class="product-img"><i class="bi bi-capsule"></i></div>
+            <span class="tag-category mt-3 align-self-start">Bones &amp; Muscles</span>
+            <h2 class="h6 mt-2">Calcium + D3</h2>
+            <p class="small text-muted-vw">Supports strong bones and teeth.</p>
+            <p class="mt-auto mb-0"><span class="price">€16.50</span> <del class="text-muted-vw small">€22.00</del></p>
+            <p class="small save-text mb-2">Save €5.50</p>
+            <button class="btn btn-primary w-100 add-to-basket" data-id="calcium-d3" data-name="Calcium + D3" data-price="16.50"><i class="bi bi-basket2"></i> Add to basket</button>
+          </div>
+        </div>
+
+        <div class="col product-col" data-category="bones" data-price="18.00" data-discount="35">
+          <div class="card product-card h-100 p-3">
+            <span class="badge badge-discount product-badge">-35%</span>
+            <!-- #17 Replace with a real product image -->
+            <div class="product-img"><i class="bi bi-capsule"></i></div>
+            <span class="tag-category mt-3 align-self-start">Bones &amp; Muscles</span>
+            <h2 class="h6 mt-2">Magnesium</h2>
+            <p class="small text-muted-vw">Helps muscles relax after exercise.</p>
+            <p class="mt-auto mb-0"><span class="price">€18.00</span> <del class="text-muted-vw small">€27.70</del></p>
+            <p class="small save-text mb-2">Save €9.70</p>
+            <button class="btn btn-primary w-100 add-to-basket" data-id="magnesium" data-name="Magnesium" data-price="18.00"><i class="bi bi-basket2"></i> Add to basket</button>
+          </div>
+        </div>
+
+        <div class="col product-col" data-category="multivitamins" data-price="21.00" data-discount="30">
+          <div class="card product-card h-100 p-3">
+            <span class="badge badge-discount product-badge">-30%</span>
+            <!-- #17 Replace with a real product image -->
+            <div class="product-img"><i class="bi bi-capsule"></i></div>
+            <span class="tag-category mt-3 align-self-start">Multivitamins</span>
+            <h2 class="h6 mt-2">Men's Multi</h2>
+            <p class="small text-muted-vw">Daily multivitamin made for men.</p>
+            <p class="mt-auto mb-0"><span class="price">€21.00</span> <del class="text-muted-vw small">€30.00</del></p>
+            <p class="small save-text mb-2">Save €9.00</p>
+            <button class="btn btn-primary w-100 add-to-basket" data-id="mens-multi" data-name="Men's Multi" data-price="21.00"><i class="bi bi-basket2"></i> Add to basket</button>
+          </div>
+        </div>
+
+        <div class="col product-col" data-category="multivitamins" data-price="21.00" data-discount="30">
+          <div class="card product-card h-100 p-3">
+            <span class="badge badge-discount product-badge">-30%</span>
+            <!-- #17 Replace with a real product image -->
+            <div class="product-img"><i class="bi bi-capsule"></i></div>
+            <span class="tag-category mt-3 align-self-start">Multivitamins</span>
+            <h2 class="h6 mt-2">Women's Multi</h2>
+            <p class="small text-muted-vw">Daily multivitamin made for women.</p>
+            <p class="mt-auto mb-0"><span class="price">€21.00</span> <del class="text-muted-vw small">€30.00</del></p>
+            <p class="small save-text mb-2">Save €9.00</p>
+            <button class="btn btn-primary w-100 add-to-basket" data-id="womens-multi" data-name="Women's Multi" data-price="21.00"><i class="bi bi-basket2"></i> Add to basket</button>
+          </div>
+        </div>
+
+        <div class="col product-col" data-category="multivitamins" data-price="15.50" data-discount="30">
+          <div class="card product-card h-100 p-3">
+            <span class="badge badge-discount product-badge">-30%</span>
+            <!-- #17 Replace with a real product image -->
+            <div class="product-img"><i class="bi bi-capsule"></i></div>
+            <span class="tag-category mt-3 align-self-start">Multivitamins</span>
+            <h2 class="h6 mt-2">Kids' Multi Gummies</h2>
+            <p class="small text-muted-vw">Fruity multivitamin gummies for kids.</p>
+            <p class="mt-auto mb-0"><span class="price">€15.50</span> <del class="text-muted-vw small">€22.00</del></p>
+            <p class="small save-text mb-2">Save €6.50</p>
+            <button class="btn btn-primary w-100 add-to-basket" data-id="kids-multi" data-name="Kids' Multi Gummies" data-price="15.50"><i class="bi bi-basket2"></i> Add to basket</button>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Shown by js/offers.js when no product matches (#9) -->
+      <p class="text-center text-muted-vw my-5 d-none" id="no-results">No deals match this filter.</p>
+    </section>
+
+    <!-- Trust strip -->
+    <section class="container my-5">
+      <div class="row g-3">
+        <div class="col-md-4">
+          <div class="card trust-item h-100 p-3">
+            <i class="bi bi-truck"></i>
+            <div>
+              <h2 class="h6 mb-1">Free delivery over €40</h2>
+              <p class="small text-muted-vw mb-0">Tracked An Post delivery to all 26 counties.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card trust-item h-100 p-3">
+            <i class="bi bi-arrow-counterclockwise"></i>
+            <div>
+              <h2 class="h6 mb-1">30-day returns</h2>
+              <p class="small text-muted-vw mb-0">Send back unopened bottles within 30 days.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card trust-item h-100 p-3">
+            <i class="bi bi-headset"></i>
+            <div>
+              <h2 class="h6 mb-1">Dublin customer support</h2>
+              <p class="small text-muted-vw mb-0">Monday to Saturday, 8:30 to 18:00.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
 
   <footer>
