@@ -146,6 +146,75 @@ h1, h2, h3, h4, h5, h6 {
    3. Home page (#6)
    ---------------------------------------------------------- */
 
+.hero {
+  background: linear-gradient(135deg, #EAF4FC 0%, var(--vw-background) 100%);
+}
+
+.hero-label {
+  background-color: #fff;
+  color: var(--vw-navy);
+  border-radius: 50rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 0.3rem 0.8rem;
+}
+
+/* Grey box with an icon until the real images are added (#17) */
+.product-img {
+  background-color: var(--vw-background);
+  border-radius: 10px;
+  height: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  color: var(--vw-light-blue);
+}
+
+.product-img-lg {
+  height: 260px;
+  font-size: 5rem;
+}
+
+.price {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--vw-navy);
+}
+
+.trust-item {
+  flex-direction: row;
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+.trust-item .bi,
+.category-card .bi {
+  font-size: 1.5rem;
+  color: var(--vw-blue);
+}
+
+.category-card {
+  text-decoration: none;
+  color: inherit;
+}
+
+.category-card:hover {
+  box-shadow: 0 8px 24px -4px rgba(27, 42, 74, 0.12);
+}
+
+.product-card {
+  position: relative;
+}
+
+/* Discount badge on the top left corner of the card */
+.product-badge {
+  position: absolute;
+  top: 1.5rem;
+  left: 1.5rem;
+}
+
 
 /* ----------------------------------------------------------
    4. Black Friday page (#8)
