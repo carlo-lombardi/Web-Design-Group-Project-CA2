@@ -11,7 +11,7 @@ The site structure is inspired by [Holland & Barrett Ireland](https://www.hollan
 | **Lecturer** | Sobia Bano |
 | **Due** | Sunday 6 December 2026 |
 | **Weight** | 60% of the module |
-| **Live site** | Coming soon (GitHub Pages) |
+| **Live site** | <https://carlo-lombardi.github.io/Web-Design-Group-Project-CA2/> |
 
 ## Pages
 
