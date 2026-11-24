@@ -9,6 +9,94 @@
    1. Brand colours, fonts and Bootstrap overrides (#5)
    ---------------------------------------------------------- */
 
+/* Our brand colours, saved once and reused everywhere */
+:root {
+  --vw-navy: #1B2A4A;
+  --vw-blue: #2E6FD8;
+  --vw-light-blue: #BFE3F7;
+  --vw-purple: #7B5EA7;
+  --vw-background: #F7FAFD;
+  --vw-text: #2E2E2E;
+  --vw-muted: #6B7280;
+
+  /* Bootstrap reads these variables, so changing them changes Bootstrap too */
+  --bs-primary: #2E6FD8;
+  --bs-primary-rgb: 46, 111, 216;
+  --bs-body-bg: #F7FAFD;
+  --bs-body-color: #2E2E2E;
+  --bs-body-font-family: "Open Sans", sans-serif;
+  --bs-link-color: #2E6FD8;
+  --bs-link-color-rgb: 46, 111, 216;
+  --bs-border-radius: 10px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Poppins", sans-serif;
+  color: var(--vw-navy);
+  font-weight: 600;
+}
+
+/* Buttons */
+.btn {
+  font-weight: 600;
+  border-radius: 10px;
+}
+
+.btn-primary {
+  --bs-btn-bg: var(--vw-blue);
+  --bs-btn-border-color: var(--vw-blue);
+  --bs-btn-hover-bg: #2560BF;
+  --bs-btn-hover-border-color: #2560BF;
+}
+
+.btn-outline-primary {
+  --bs-btn-color: var(--vw-blue);
+  --bs-btn-border-color: var(--vw-blue);
+  --bs-btn-hover-bg: var(--vw-blue);
+  --bs-btn-hover-border-color: var(--vw-blue);
+}
+
+/* Purple button for offers */
+.btn-promo {
+  background-color: var(--vw-purple);
+  border-color: var(--vw-purple);
+  color: #fff;
+}
+
+.btn-promo:hover {
+  background-color: #6A4F93;
+  border-color: #6A4F93;
+  color: #fff;
+}
+
+/* Cards */
+.card {
+  border: 1px solid rgba(27, 42, 74, 0.06);
+  border-radius: 12px;
+  box-shadow: 0 4px 16px -2px rgba(27, 42, 74, 0.05);
+}
+
+/* Purple pill for discounts, e.g. -30% */
+.badge-discount {
+  background-color: var(--vw-purple);
+  color: #fff;
+  border-radius: 50rem;
+}
+
+/* Light blue tag for categories, e.g. Immunity */
+.tag-category {
+  background-color: rgba(191, 227, 247, 0.6);
+  color: var(--vw-navy);
+  border-radius: 50rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.2rem 0.6rem;
+}
+
+.text-muted-vw {
+  color: var(--vw-muted);
+}
+
 
 /* ----------------------------------------------------------
    2. Header and navbar (#3)
