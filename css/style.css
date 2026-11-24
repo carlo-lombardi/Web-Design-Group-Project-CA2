@@ -220,6 +220,22 @@ h1, h2, h3, h4, h5, h6 {
    4. Black Friday page (#8)
    ---------------------------------------------------------- */
 
+.bf-banner {
+  background: linear-gradient(120deg, var(--vw-navy) 0%, var(--vw-purple) 100%);
+  border-radius: 16px;
+  color: #E8E4F2;
+}
+
+.filter-bar .form-select {
+  width: auto;
+}
+
+/* "Save €X" text under the price */
+.save-text {
+  color: var(--vw-purple);
+  font-weight: 600;
+}
+
 
 /* ----------------------------------------------------------
    5. Basket and checkout (#10, #11)
