@@ -241,6 +241,32 @@ h1, h2, h3, h4, h5, h6 {
    5. Basket and checkout (#10, #11)
    ---------------------------------------------------------- */
 
+/* One product in the basket list */
+.basket-row {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 0;
+  border-bottom: 1px solid rgba(27, 42, 74, 0.08);
+}
+
+.basket-row:last-child {
+  border-bottom: none;
+}
+
+.basket-thumb {
+  width: 64px;
+  height: 64px;
+  flex-shrink: 0;
+  background-color: var(--vw-background);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.75rem;
+  color: var(--vw-light-blue);
+}
+
 
 /* ----------------------------------------------------------
    6. Naside: footer, Help page and FAQ (#4, #16)
