@@ -56,6 +56,63 @@
     <!-- #12 Help page content: header, info cards, address and opening hours -->
     <!-- #13 FAQ accordion -->
     <!-- #14 Contact form -->
+    
+<section class="container my-5">
+  <h2 class="mb-4">Contact Us</h2>
+  <p>
+    Have a question? Send us a message using the form below.
+  </p>
+
+  <form id="contactForm" novalidate>
+    <div class="mb-3">
+      <label for="contactName" class="form-label">
+        Full Name
+      </label>
+      <input type="text" class="form-control"
+        id="contactName" name="name" required>
+    </div>
+
+    <div class="mb-3">
+      <label for="contactEmail" class="form-label">
+        Email Address
+      </label>
+      <input type="email" class="form-control"
+        id="contactEmail" name="email" required>
+    </div>
+
+    <div class="mb-3">
+      <label for="contactSubject" class="form-label">
+        Subject
+      </label>
+      <select class="form-select"
+        id="contactSubject" name="subject" required>
+        <option value="">Choose a subject</option>
+        <option value="delivery">Delivery</option>
+        <option value="returns">Returns</option>
+        <option value="products">Products</option>
+        <option value="other">Other</option>
+      </select>
+    </div>
+
+    <div class="mb-3">
+      <label for="contactMessage" class="form-label">
+        Message
+      </label>
+      <textarea class="form-control"
+        id="contactMessage" name="message"
+        rows="5" required></textarea>
+    </div>
+
+    <button type="submit" class="btn btn-primary">
+      Send Message
+    </button>
+
+    <div id="contactFeedback"
+      class="mt-3" role="status" aria-live="polite">
+    </div>
+  </form>
+</section>
+
   </main>
 
   <footer>
