@@ -102,6 +102,45 @@ h1, h2, h3, h4, h5, h6 {
    2. Header and navbar (#3)
    ---------------------------------------------------------- */
 
+/* Thin strip above the navbar */
+.top-strip {
+  background-color: #14203A;
+  color: #fff;
+  font-size: 0.8rem;
+}
+
+.navbar-vw {
+  background-color: var(--vw-navy);
+}
+
+.navbar-vw .navbar-brand {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+}
+
+.navbar-vw .navbar-brand .bi {
+  color: var(--vw-light-blue);
+}
+
+/* Current page in the menu */
+.navbar-vw .nav-link.active {
+  color: #fff;
+  border-bottom: 2px solid var(--vw-light-blue);
+}
+
+.basket-link {
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+.basket-link:hover {
+  color: var(--vw-light-blue);
+}
+
+#basket-count {
+  font-size: 0.65rem;
+}
+
 
 /* ----------------------------------------------------------
    3. Home page (#6)
