@@ -271,3 +271,93 @@ h1, h2, h3, h4, h5, h6 {
 /* ----------------------------------------------------------
    6. Naside: footer, Help page and FAQ (#4, #16)
    ---------------------------------------------------------- */
+
+/* Naside - Footer and Help page styles (#4, #16) */
+
+/* Shared footer */
+footer {
+  background-color: #1B2A4A;
+  color: white;
+  margin-top: 40px;
+}
+
+footer h5 {
+  color: white;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+footer p {
+  color: #E8F3F7;
+}
+
+footer a {
+  color: #E8F3F7;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+footer hr {
+  border-color: #E8F3F7;
+}
+
+/* Help page */
+main > .container h1,
+main > .container h2 {
+  color: #1B2A4A;
+}
+
+main > .container .card {
+  border-radius: 10px;
+  border: 1px solid #E8F3F7;
+}
+
+main > .container .card h2 {
+  color: #1B2A4A;
+}
+
+/* FAQ accordion */
+#faqAccordion .accordion-button {
+  color: #1B2A4A;
+  font-weight: 600;
+}
+
+#faqAccordion .accordion-button:not(.collapsed) {
+  background-color: #E8F3F7;
+  color: #1B2A4A;
+}
+
+#faqAccordion .accordion-button:focus {
+  box-shadow: 0 0 0 0.2rem rgba(46, 111, 216, 0.2);
+}
+
+#faqAccordion .accordion-body {
+  background-color: white;
+  color: #1B2A4A;
+}
+
+/* Contact form */
+#contactForm .form-control,
+#contactForm .form-select {
+  border-radius: 8px;
+}
+
+#contactForm .form-control:focus,
+#contactForm .form-select:focus {
+  border-color: #2E6FD8;
+  box-shadow: 0 0 0 0.2rem rgba(46, 111, 216, 0.15);
+}
+
+#contactForm button {
+  background-color: #2E6FD8;
+  border-color: #2E6FD8;
+}
+
+#contactForm button:hover {
+  background-color: #2456A8;
+}
+
